@@ -63,14 +63,14 @@ body { background-color: #ededed; margin: 0; padding: 0; }
 
 #artist, #email, #info, #one, #piece, #three, #two { position: absolute; }
 #artist, #one div div, #piece, #three img, #two div div { border: 1px solid #ddd; }
-#artist, #piece { background-image: url( /i/icons.jpg ); height: 21px; bottom: 0; width: 21px; }
+#artist, #piece { background-image: url( /i/icons.jpeg ); height: 21px; bottom: 0; width: 21px; }
 #email, #info div { background-image: url( /i/info.gif ); background-repeat: no-repeat; font-size: 1pt; height: 11px; line-height: 0.1pt; }
 #four, #one, #piece { left: 0; }
 #artist, #one div div, #piece, #two div div { cursor: pointer; }
 #one, #two { width: 72px; }
 #one, #three, #two { height: 479px; top: 0; }
 #one div, #two div { position: relative; }
-#one div div, #two div div { background-image: url( /i/thumbs.jpg ); position: absolute !important; width: 50px; }
+#one div div, #two div div { background-image: url( /i/thumbs.jpeg ); position: absolute !important; width: 50px; }
 
 .d-n { display: none; }
 .h-54 { height: 54px !important; }
