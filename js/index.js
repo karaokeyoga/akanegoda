@@ -42,20 +42,20 @@ function __init() {
 	$( '#piece' ).hover( __info_piece_show, __info_piece_hide );
 	}
 
-function __preload() {
-	$.preload( [ '1', '2', '3', '4', '5', '6', '7' ], { base: '/i/479/', ext: '.jpg' } );
-	$.preload( [ 'info' ], { base: '/i/', ext: '.gif' } );
-	}
-
 function __last( _id ) {
 	$( '#piece' ).attr( 'class', 'p-' + _id );
 	}
 
 function __next( _id, _idx ) {
 	$( '#three' )
-		.replaceWith( '<div id="three" class="d-n"><img height="' + ( _art[ _idx ][ 2 ] ? _art[ _idx ][ 3 ] : '479' ) + '" src="/i/479/' + _art[ _idx ][ 0 ] + '.jpg" width="' + ( _art[ _idx ][ 2 ] ? '479' : _art[ _idx ][ 3 ] ) + '"></div>' );
+		.replaceWith( '<div id="three" class="d-n"><img height="' + ( _art[ _idx ][ 2 ] ? _art[ _idx ][ 3 ] : '479' ) + '" src="/i/479/' + _art[ _idx ][ 0 ] + '.jpeg" width="' + ( _art[ _idx ][ 2 ] ? '479' : _art[ _idx ][ 3 ] ) + '"></div>' );
 	$( '#three' )
 		.fadeIn( 'slow', function () { __last( _id ) } );
+	}
+
+function __preload() {
+	$.preload( [ '1', '2', '3', '4', '5', '6', '7' ], { base: '/i/479/', ext: '.jpeg' } );
+	$.preload( [ 'info' ], { base: '/i/', ext: '.gif' } );
 	}
 
 /*
