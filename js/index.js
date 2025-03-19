@@ -50,7 +50,7 @@ function __next( _id, _idx ) {
 	$( '#three' )
 		.replaceWith( '<div id="three" class="d-n"><img height="' + ( _art[ _idx ][ 2 ] ? _art[ _idx ][ 3 ] : '479' ) + '" src="/i/479/' + _art[ _idx ][ 0 ] + '.jpeg" width="' + ( _art[ _idx ][ 2 ] ? '479' : _art[ _idx ][ 3 ] ) + '"></div>' );
 	$( '#three' )
-		.fadeIn( 'slow', function () { __last( _id ) } );
+		.fadeIn( 'fast', function () { __last( _id ) } );
 	}
 
 function __preload() {
